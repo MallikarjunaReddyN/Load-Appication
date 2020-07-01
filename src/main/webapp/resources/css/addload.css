@@ -1,0 +1,45 @@
+
+
+form {
+	margin-top: 10px;
+}
+
+
+input[type=text], input[type=date] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.addload {
+	margin-left: 300px;
+}
+
+.save {
+	border: 1px solid #666; 
+	border-radius: 5px; 
+	padding: 4px; 
+	font-size: 12px;
+	font-weight: bold;
+	width: 120px; 
+	padding: 5px 10px; 
+	margin-right: 14px;
+	margin-bottom: 15px;
+	background-color: #0000ff;
+	color: white;
+}
+
+hr{
+	 margin-right:735px;
+}
+
+
+	

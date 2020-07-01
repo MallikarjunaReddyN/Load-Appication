@@ -1,0 +1,84 @@
+@charset "ISO-8859-1";
+
+input[type=text] {
+  width: 10%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#load {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#load td, #load th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#load tr:nth-child(even){background-color: #f2f2f2;}
+
+#load tr:hover {background-color: #ddd;}
+
+#load th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #4592b6;
+  color: white;
+}
+
+#tload {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tload th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#tload th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #4592b6;
+  color: white;
+}
+
+.add-button {
+	border: 1px solid #666; 
+	border-radius: 5px; 
+	padding: 4px; 
+	font-size: 12px;
+	font-weight: bold;
+	width: 120px; 
+	cursor: pointer;
+	padding: 5px 10px; 
+	margin-right: 14px;
+	margin-bottom: 15px;
+	background-color: #1888e2;
+	color: white;
+	position: absolute;
+	 right: 0;
+	 margin-top: 15px;
+}
+.search {
+	border: 1px solid #666; 
+	border-radius: 5px; 
+	padding: 4px; 
+	font-size: 12px;
+	font-weight: bold;
+	width: 120px; 
+	cursor: pointer;
+	padding: 5px 10px; 
+	margin-right: 14px;
+	margin-bottom: 15px;
+	background-color: #1888e2;
+	color: white;
+}
