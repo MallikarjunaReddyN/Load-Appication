@@ -9,6 +9,8 @@
 	<link type="text/css"
 		  rel="stylesheet"
 		  href="${pageContext.request.contextPath}/resources/css/addload.css">
+		   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		  
 		  
 		  <script type="text/javascript">
 		function validate(){
@@ -69,8 +71,7 @@
 		response.sendRedirect("/springhibernate/login?");
 	} %>
 
-<div class="addload">
-	<div id="container">
+<div class="container">
 		<h3>Add Load</h3>
 		<hr>
 		<form:form onsubmit="return validate();" action="addloadprocess" modelAttribute="addLoad" method="POST">
@@ -80,7 +81,7 @@
 		<label><b>Load Name:</b></label>
 		</div>
 		<div>
-		<form:input type="text" placeholder="Enter loadname" id="loadname" path="loadname" />
+		<form:input type="text" placeholder="Enter loadname" class="form-control mb-4 col-4" id="loadname" path="loadname" autocomplete="off" />
 		</div>
 		<span id="lerror" style="color:red"></span>
 		</div>
@@ -89,7 +90,7 @@
 		<label><b>No.of Packs:</b></label>
 		</div>
 		<div>
-		<form:input type="text" placeholder="Enter No of packs" id="pack" path="packs" />
+		<form:input type="text" placeholder="Enter No of packs" class="form-control mb-4 col-4" id="pack" path="packs" autocomplete="off" />
 		</div>
 		<span id="perror" style="color:red"></span>
 		</div>
@@ -98,7 +99,7 @@
 		<label><b>Load Cost:</b></label>
 		</div>
 		<div>
-	    <form:input type="text" placeholder="Enter Amount" id="cost" path="loadCost" />
+	    <form:input type="text" placeholder="Enter Amount" class="form-control mb-4 col-4" id="cost" path="loadCost" autocomplete="off" />
 	    </div>
 	    <span id="cerror" style="color:red"></span>
 	    </div>
@@ -107,20 +108,18 @@
 	    <label><b>date:</b></label>
 		</div>
 		<div>
-	    <form:input type="date" placeholder="select date" id="date" path="date" />
+	    <form:input type="date" placeholder="select date" class="form-control mb-4 col-4" id="date" path="date" />
 	    </div>
 	    <span id="derror" style="color:red"></span>
 	    </div><br>
-		<input type="submit" value="Save" class="save" /><br>
+		<input type="submit" value="Save" class="btn btn-primary" /><br><br><br>
 		</form:form>
 	
 		<div style="clear; both;"></div>
 		
 		<p>
-			<a href="${pageContext.request.contextPath}/loads">Back to Loads List</a>
+			<a href="${pageContext.request.contextPath}/loads" class="btn btn-danger btn-sm mb-3">Back to Loads List</a>
 		</p>
-	
-	</div>
 </div>
 </body>
 

@@ -23,7 +23,7 @@
     <label for="email"><b>Username</b></label><span>*</span>
     </div>
     <div>
-	<form:input type="text" placeholder="Enter Username" id="uname" path="username" />
+	<form:input type="text" placeholder="Enter Username" id="uname" path="username" autocomplete="off" />
 	</div>
 	<div class="pass">
 	<label for="psw"><b>Password</b></label><span>*</span>

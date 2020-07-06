@@ -13,6 +13,7 @@
 	<link type="text/css"
 		  rel="stylesheet"
 		  href="${pageContext.request.contextPath}/resources/css/login.css" />	
+		  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 		  
 		<script type="text/javascript">
 		function validate(){
@@ -58,7 +59,7 @@
     <label for="uname"><b>Username</b></label><span>*</span>
     </div>
     <div>
-    <form:input type="text" placeholder="Enter Username" id="username" path="usrname" />
+    <form:input type="text" placeholder="Enter Username"  id="username" path="usrname" autocomplete="off" />
     </div>
     <span id="uerror" style="color:red"></span>
     </div>

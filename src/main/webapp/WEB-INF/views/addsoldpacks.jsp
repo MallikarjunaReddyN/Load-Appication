@@ -9,6 +9,7 @@
 	<link type="text/css"
 		  rel="stylesheet"
 		  href="${pageContext.request.contextPath}/resources/css/addload.css">
+		  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		   <script type="text/javascript">
 		function validate(){
 		var loadname = document.getElementById("person").value;
@@ -68,8 +69,7 @@
 		response.sendRedirect("/springhibernate/login?");
 	} %>
 
-<div class="addload">
-	<div id="container">
+<div class="container">
 		<h2>Add Sold Details</h2>
 		<hr>
 		<form:form onsubmit="return validate();" action="addsoldprocess" modelAttribute="addsold" method="POST">
@@ -79,7 +79,7 @@
 		<label><b>Person Name:</b></label>
 		</div>
 		<div>
-		<form:input type="text" id="person" path="personname" />
+		<form:input type="text" class="form-control mb-4 col-4" id="person" path="personname" autocomplete="off" />
 		</div>
 		<span id="lerror" style="color:red"></span>
 		</div>
@@ -88,7 +88,7 @@
 		<label><b>No.of Packs:</b></label>
 		</div>
 		<div>
-		<form:input type="text" id="packs" path="packs" />
+		<form:input type="text" class="form-control mb-4 col-4" id="packs" path="packs" autocomplete="off" />
 		</div>
 		<span id="perror" style="color:red"></span>
 		</div>
@@ -97,7 +97,7 @@
 		<label><b>Amount(Rs):</b></label>
 		</div>
 		<div>
-	    <form:input type="text" id="cost" path="cost" />
+	    <form:input type="text" class="form-control mb-4 col-4" id="cost" path="cost" autocomplete="off" />
 	    </div>
 	    <span id="cerror" style="color:red"></span>
 	    </div>
@@ -106,20 +106,18 @@
 	    <label><b>Date:</b></label>
 		</div>
 		<div>
-	    <form:input type="date" id="date" path="date" />
+	    <form:input type="date" class="form-control mb-4 col-4" id="date" path="date" />
 	    </div>
 	    <span id="derror" style="color:red"></span>
 	    </div><br>
-		<input type="submit" value="Save" class="save" /><br>
+		<input type="submit" value="Save" class="btn btn-primary" /><br>
 		</form:form>
 	
 		<div style="clear; both;"></div>
 		
 		<p><br>
-			<a href="${pageContext.request.contextPath}/sold">Back to Sold List</a>
+			<a href="${pageContext.request.contextPath}/sold" class="btn btn-danger btn-sm mb-3">Back to Sold List</a>
 		</p>
-	
-	</div>
 </div>
 </body>
 
