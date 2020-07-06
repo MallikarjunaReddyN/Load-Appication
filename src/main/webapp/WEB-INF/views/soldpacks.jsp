@@ -12,6 +12,8 @@
 	<link type="text/css"
 		  rel="stylesheet"
 		  href="${pageContext.request.contextPath}/resources/css/load.css" />
+		   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		  
 </head>
 <body>
 
@@ -22,12 +24,12 @@
 <h1>Sold List</h1>
 </div>
 <div>
-<input type="button" value="Add"
-	onclick="window.location.href='addsold'; return false;" class="add-button" />
+<input type="button" value="Add pack"
+	onclick="window.location.href='addsold'; return false;" class="btn btn-primary btn-sm mb-3" style="position: absolute; margin-left: 1265px; margin-top:10px;" />
 </div>			   
 <form:form action="search" method="GET">
-<h4>Search by Person:<input type="text" name="theSearchName" />
-<input type="submit" value="Search" class="search" /></h4>
+<h4>Search by Person:<input type="text" name="theSearchName" class="form-control mb-4 col-4" />
+<input type="submit" value="Search" class="btn btn-primary btn-sm mb-3" style="margin-top: 12px;" /></h4>
 </form:form>
 
 <table id="load">
@@ -51,7 +53,7 @@
 <td>${load.packs}</td>
 <td>${load.cost}</td>
 <td>${load.date}</td>
-<td><a href="${updatelink}">Update</a>|<a href="${deletelink}">Delete</a></td>
+<td><a href="${updatelink}" class="btn btn-primary">Edit</a> <a href="${deletelink}" class="btn btn-danger">Delete</a></td>
 </tr>
 </c:forEach>
 </table>

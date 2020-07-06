@@ -89,7 +89,7 @@
     <label for="email"><b>Username</b></label><span>*</span>
     </div>
     <div>
-	<form:input type="text" placeholder="Enter Username" id="uname" path="username" />
+	<form:input type="text" placeholder="Enter Username" id="uname" path="username" autocomplete="off" />
 	</div>
 	<span id="uerror" style="color:red"></span>
 	</div>
@@ -116,7 +116,7 @@
 	<label for="psw-repeat"><b>E-Mail</b></label><span>*</span>
 	</div>
 	<div>
-    <form:input type="text" placeholder="Enter E-Mail" id="e-mail" path="email" />
+    <form:input type="text" placeholder="Enter E-Mail" id="e-mail" path="email" autocomplete="off" />
     </div>
     <span id="eerror" style="color:red"></span>
     </div>

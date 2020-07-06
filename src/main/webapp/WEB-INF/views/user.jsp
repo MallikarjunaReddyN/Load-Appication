@@ -10,6 +10,9 @@
 	<link type="text/css"
 		  rel="stylesheet"
 		  href="${pageContext.request.contextPath}/resources/css/user.css" />
+		  
+		  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		  
 </head>
 <body>
 	<% if(session.getAttribute("uname")== null){
@@ -19,7 +22,7 @@
  	<h1>Welcome <%=session.getAttribute("username") %></h1>
  	</div>
  	<div align="right">
- 	<input type="button" class="logout" value="Logout" onclick="window.location.href='logout'; return false;" />
+ 	<input type="button" class="btn btn-primary btn-sm mb-3" style="margin-right: 25px;" value="Logout" onclick="window.location.href='logout'; return false;" />
  	</div>
  	<hr>
  	<div class="clearfix">
